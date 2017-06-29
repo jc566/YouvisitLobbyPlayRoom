@@ -272,9 +272,15 @@ MonoBehaviour:
   - eventID: 0
     callback:
       m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 168973073}
-          m_MethodName: printMessage
+          m_MethodName: teleportToLocation
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -301,6 +307,7 @@ MonoBehaviour:
   savedSpinSpeed: 0
   inactiveMaterial: {fileID: 0}
   activeMaterial: {fileID: 0}
+  player: {fileID: 907292807}
 --- !u!1 &189115713 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 555767533, guid: 34c21f523e72f45509a4e37ed0293c3b,

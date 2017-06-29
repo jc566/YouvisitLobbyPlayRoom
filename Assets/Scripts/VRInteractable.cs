@@ -23,6 +23,7 @@ public class VRInteractable : MonoBehaviour
     //The amount to scale an object with SizeChangeScript.cs attached
     private const float ScaleAmount = 0.07f;
 
+    public GameObject player; //reference to the player
     void Start()
     {
         //startingPosition = transform.localPosition;
@@ -45,11 +46,17 @@ public class VRInteractable : MonoBehaviour
 
     public void Reset()
     {
-        //transform.localPosition = startingPosition;
+        transform.localPosition = startingPosition;
     }
 
-   
- 
+
+    /************************
+     * Teleportation Logic  *
+     ***********************/
+    public void teleportToLocation()
+    {
+        player.transform.position = this.transform.position;
+    }
 
     //Print a Debug.log message
     public void printMessage()
